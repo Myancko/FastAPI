@@ -1,0 +1,2 @@
+method: 'GET', query param: 'student_id=1', path params: '{}' received at '2023-10-03 17:48:27.497790'
+method: 'GET', query param: 'student_id=1', path params: '{}' received at '2023-10-03 17:48:31.757046'

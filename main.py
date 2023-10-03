@@ -41,7 +41,7 @@ async def log_general(request: Request, call_next):
     method_name = request.method
     qp_map = request.query_params
     pp_map = request.path_params
-    with open("request_log.txt", mode="a") as reqfile:
+    with open("request_log.txt", mode="a+") as reqfile:
         content = f"method: '{method_name}', query param: '{qp_map}', path params: '{pp_map}' received at '{datetime.now()}'\n"
         reqfile.write(content)
     response = await call_next(request)
