@@ -1,1 +1,1 @@
-uvicorn fast_atv:app --reload
+uvicorn main:app --reload
